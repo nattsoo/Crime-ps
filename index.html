@@ -1,0 +1,218 @@
+
+!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CRIME GTPS — Dari Crime Jadi King</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d12;           /* base background */
+      --panel:#0f1420;        /* panel background */
+      --card:#121828;         /* card background */
+      --text:#eaf1ff;         /* main text */
+      --muted:#b7c6ec;        /* secondary text */
+      --primary:#3aa7ff;      /* blue primary */
+      --primary-2:#69e1ff;    /* cyan accent */
+      --accent:#ffd166;       /* underline accent */
+      --ring:0 0 0 2px rgba(58,167,255,.35),0 12px 38px rgba(58,167,255,.25);
+      --radius:22px;          /* big round corners */
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:var(--text);
+      line-height:1.65;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(58,167,255,.18), transparent 60%),
+        radial-gradient(900px 500px at -10% 10%, rgba(105,225,255,.14), transparent 60%),
+        var(--bg);
+      overflow-x:hidden;
+    }/* HEADER / HERO (big title + slogan) */
+header.hero{
+  max-width:1200px; margin:0 auto; padding:56px 20px 22px; text-align:center;
+}
+.brandmark{display:inline-grid; place-items:center; width:62px; height:62px; border-radius:18px;
+  background:linear-gradient(135deg,var(--primary),var(--primary-2)); color:#02253a; font-weight:900; box-shadow:var(--ring);
+  margin-bottom:12px; font-size:28px}
+.eyebrow{color:var(--primary); font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:.9rem}
+h1.title{margin:8px 0 10px; font-size:clamp(2.4rem,6vw,3.8rem); line-height:1.1; font-weight:800;
+  text-shadow:0 0 40px rgba(58,167,255,.35)}
+p.slogan{color:#d6e6ff; font-size:clamp(1.02rem,2.6vw,1.28rem); max-width:900px; margin:0 auto 8px}
+
+/* NAV (simple pills) */
+.navwrap{position:sticky; top:0; z-index:40; backdrop-filter:blur(10px); background:rgba(11,13,18,.6); border-bottom:1px solid rgba(255,255,255,.06)}
+nav.nav{max-width:1200px; margin:0 auto; display:flex; gap:10px; padding:12px 16px; flex-wrap:wrap; justify-content:center}
+.pill{padding:10px 14px; border-radius:999px; border:1px solid rgba(255,255,255,.14); color:var(--text); text-decoration:none; font-weight:700}
+.pill:hover{border-color:rgba(58,167,255,.5); box-shadow:var(--ring)}
+
+/* GRID of BIG CARDS (everything visible as boxes) */
+main{max-width:1200px; margin:0 auto; padding:28px 16px 60px}
+.grid{display:grid; gap:22px; grid-template-columns:repeat(auto-fit, minmax(280px,1fr))}
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius); padding:22px 22px; box-shadow:var(--shadow);
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-4px); border-color:rgba(58,167,255,.45); box-shadow:var(--ring)}
+.card h2{margin:6px 0 4px; font-size:clamp(1.4rem,3.2vw,2rem)}
+.subtitle{margin:0 0 12px; color:var(--muted)}
+.underline{width:110px; height:4px; background:var(--accent); border-radius:999px; margin:12px 0 14px}
+
+/* LIST styles bigger for readability */
+ul.big{list-style:disc; margin:0; padding-left:20px}
+ul.big li{margin:8px 0; font-size:clamp(1rem,2.2vw,1.08rem)}
+
+/* BUTTONS */
+.btn{appearance:none; border:0; cursor:pointer; padding:14px 20px; border-radius:16px; font-weight:800; text-decoration:none; color:#001428; background:linear-gradient(135deg,var(--primary),var(--primary-2)); box-shadow:var(--ring)}
+.btn:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent; color:var(--text); border:1px solid rgba(255,255,255,.16); box-shadow:none}
+
+/* DOWNLOAD buttons layout */
+.btnrow{display:flex; flex-wrap:wrap; gap:10px}
+
+/* FOOTER */
+footer{max-width:1200px; margin:0 auto 36px; text-align:center; color:var(--muted)}
+
+  </style>
+</head>
+<body>  <!-- HERO -->  <header class="hero">
+    <div class="brandmark">CG</div>
+    <div class="eyebrow">Welcome to</div>
+    <h1 class="title">CRIME GTPS</h1>
+    <p class="slogan">“CRIME GTPS – Tempat Para Legend Dilahirkan, dari Noob jadi Bos, dari Crime jadi King!”</p>
+  </header>  <!-- NAV (anchors to cards) -->  <div class="navwrap">
+    <nav class="nav">
+      <a class="pill" href="#download">Download</a>
+      <a class="pill" href="#rules">Rules</a>
+      <a class="pill" href="#roles">Role Price</a>
+      <a class="pill" href="#titles">Title Price</a>
+      <a class="pill" href="#citem">CITEM</a>
+      <a class="pill" href="#event">Event</a>
+      <a class="pill" href="#hall">Hall of Fame</a>
+      <a class="pill" href="#community">Community</a>
+    </nav>
+  </div>  <!-- BIG CARDS GRID -->  <main>
+    <div class="grid">
+      <!-- DOWNLOAD LINKS -->
+      <section class="card" id="download">
+        <h2>📥 Download & Join</h2>
+        <p class="subtitle">Semua file siap tempur. Pilih sesuai device kamu.</p>
+        <div class="underline"></div>
+        <div class="btnrow">
+          <a class="btn" href="https://skyhosting.lol/iOS">📱 iOS Config</a>
+          <a class="btn" href="https://skyhosting.lol/ptunnel.txt">🤖 Android (pTunnel)</a>
+          <a class="btn" href="https://www.mediafire.com/file/48fgiwbews4s73n/CRIME-PS.txt/file">🌐 Host File</a>
+          <a class="btn btn-ghost" href="https://discord.gg/XJm2jbqT">💬 Discord</a>
+          <a class="btn btn-ghost" href="https://chat.whatsapp.com/DhXRdxyhuc33ERWe5UqDfy?mode=ac_t">📲 WhatsApp</a>
+        </div>
+      </section><!-- RULES -->
+  <section class="card" id="rules">
+    <h2>📜 Rules</h2>
+    <p class="subtitle">Main sehat, komunitas nyaman. Pelanggaran berat = ban permanent.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>🚫 No Cheat / Hack → Ban permanent.</li>
+      <li>💀 No Scam → Blacklist selamanya.</li>
+      <li>🤝 Respect player & staff.</li>
+      <li>📵 No spam / flood → Mute → Ban.</li>
+      <li>💎 Trade aman, gunakan sistem resmi.</li>
+      <li>⚠️ No bug abuse → report ke staff.</li>
+      <li>🧠 Gunakan akal sehat, enjoy the game.</li>
+    </ul>
+  </section>
+
+  <!-- ROLE PRICE -->
+  <section class="card" id="roles">
+    <h2>💠 Role Price List</h2>
+    <p class="subtitle">Upgrade role biar makin disegani di dunia CRIME.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>🛡️ Moderator (MOD): Rp60K</li>
+      <li>⚔️ Super Moderator (SMOD): Rp80K</li>
+      <li>👨‍💻 Developer (DEV): Rp120K</li>
+      <li>🏆 Super Developer (SDEV): Rp200K</li>
+      <li>✨ /CSN (Custom Name Command): Rp100K</li>
+      <li>💸 /BUY (Buy Command): Rp150K</li>
+      <li>👹 Cheater Role: Rp80K</li>
+      <li>🚀 Booster (BOST): Rp100K</li>
+      <li>🔥 Super Booster (SBOST): Rp130K</li>
+    </ul>
+  </section>
+
+  <!-- TITLE PRICE -->
+  <section class="card" id="titles">
+    <h2>👑 Title Price List</h2>
+    <p class="subtitle">Pilih gelar favoritmu. Gaya boleh, skill wajib.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>🔵 Blue Name (Max Level): Rp20K</li>
+      <li>💎 G4G Title: Rp35K</li>
+      <li>⚕️ DOCTOR Title: Rp15K</li>
+      <li>🎓 MENTOR Title: Rp25K</li>
+      <li>👑 Legendary Title: Rp20K</li>
+    </ul>
+  </section>
+
+  <!-- CITEM PRICE -->
+  <section class="card" id="citem">
+    <h2>🗡️ CITEM Price List</h2>
+    <p class="subtitle">Item langka dan hero favorit, tinggal pilih.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>🐍 The Serpent (Hammer) → 150 xGems</li>
+      <li>🔥 Goku → 200 xGems / Rp200K</li>
+      <li>👓 Gojo → 200 xGems / Rp200K</li>
+      <li>👹 Sukuna → 250 xGems / Rp220K</li>
+      <li>⚡ Sasuke → 150 xGems / Rp150K</li>
+      <li>🍥 Naruto → 150 xGems / Rp150K</li>
+      <li>⚔️ CITEM Sword (Custom Legendary) → 500 xGems / Rp300K</li>
+    </ul>
+  </section>
+
+  <!-- EVENT INFO -->
+  <section class="card" id="event">
+    <h2>🎉 Event</h2>
+    <p class="subtitle">Kumpul bareng, buktikan siapa yang terkuat.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>🎁 Drop Party Intinya tiap hari sabtu tunggu ae notifnya.</li>
+      <li>⚡ Giveaway Gems & Item  di w/li>
+      <li>🏆 Tournament seasonal dengan hadiah menarik.</li>
+    </ul>
+  </section>
+
+  <!-- HALL OF FAME -->
+  <section class="card" id="hall">
+    <h2>🏆 Hall of Fame</h2>
+    <p class="subtitle">Legend hidup di sini.</p>
+    <div class="underline"></div>
+    <ul class="big">
+      <li>👑 Top Donator: <strong>Onizuka</strong></li>
+      <li>🔥 Top Player: <strong>Davina karambol</strong></li>
+    </ul>
+  </section>
+
+  <!-- COMMUNITY SHORTCUT -->
+  <section class="card" id="community">
+    <h2>🌐 Server Community</h2>
+    <p class="subtitle">Join komunitas untuk info & support.</p>
+    <div class="underline"></div>
+    <div class="btnrow">
+      <a class="btn" href="https://discord.gg/XJm2jbqT">💬 Join Discord</a>
+      <a class="btn btn-ghost" href="https://chat.whatsapp.com/DhXRdxyhuc33ERWe5UqDfy?mode=ac_t">📲 WhatsApp Group</a>
+    </div>
+  </section>
+
+</div>
+
+  </main>  <footer>
+    © <span id="year"></span> CRIME GTPS — All rights reserved.
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
